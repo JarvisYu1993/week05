@@ -1,0 +1,97 @@
+.header-icon{
+    color:$dark;
+    &:hover{
+        color:$secondary;
+    }
+}
+.assignment-list{
+    &-active{
+        background-color: $primary;
+    }
+    li{
+        padding:12px;
+        border:1px solid  #CDDDCD;
+        &:nth-child(odd){
+            border-bottom:none;
+        }
+        &:nth-child(2){
+            border-bottom:none;
+        }
+
+        &:hover{
+            background-color: $primary;
+
+        }
+        a{
+            color:$dark;
+            text-decoration: none;
+        }
+    }
+}
+.comments-list{  
+        .assignment-icon{
+            color:$dark;
+            text-decoration: none;
+            &:hover{
+                color:$secondary;
+            }
+        }
+        .dropdown-menu{
+            min-width:40px;
+            &-right{
+                text-align: center;
+                padding:8px;
+            }
+        }
+        .dropdown-item{
+            &:nth-child(odd){
+                margin-bottom: 5px;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+}
+.assignment-user{
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true) no-repeat center center / cover;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.p-block{
+    p{
+        line-height:1.5;
+        margin-bottom: 16px;
+    }
+}
+
+.assignment-self{
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true) no-repeat center center / cover;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.text-indent{
+    text-indent: 14px;
+}
+.reply-content{
+    visibility: hidden;
+    top:0;
+    left:0;
+    bottom:-20px;
+    &.active{
+        visibility: visible;
+        display: block;
+    }
+    li{
+        a{
+            color:$dark;
+            &:hover{
+                color:$secondary;
+                text-decoration: none;
+            }
+        }
+    }
+}

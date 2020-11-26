@@ -1,0 +1,31 @@
+.modal{
+    &-header{
+        border-bottom:none;
+        margin-bottom:32px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &-body{
+        .form-group-bottom{
+            border-bottom:1px solid $primary;
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .input-control{
+            background-color: $primary;
+            border:none;
+        }
+        
+        .select-control{
+            border-radius:2px;
+            border:1px solid #121212;
+        }
+        .form-check-bottom{
+            border-bottom:1px solid $primary;
+        }
+
+    }
+}

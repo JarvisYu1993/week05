@@ -1,0 +1,66 @@
+.link-btn{
+    width:176px;
+    border-radius: 2px;
+}
+.btn-primary{
+    background-color: $primary;
+    border:1px solid #CDDDCD;
+    
+}
+.btn-secondary{
+    background-color: $secondary;
+    border:1px solid $secondary;
+    &:hover{
+        background-color: $secondary;
+        color: #fff !important;
+        opacity: .8;
+    }
+}
+.btn-danger{
+    background: $danger;
+    color:$white;
+}
+.btn-outline-secondary{
+    border:1px solid $secondary;
+    background-color: #fff;
+    color: $secondary;
+    &:hover{
+        background-color: $secondary;
+        color: #fff !important;
+    }
+}
+.btn-outline-danger{
+    border:1px solid $danger;
+    background-color: #fff;
+    color: $danger;
+    &:hover{
+        background-color: $danger;
+        color: #fff !important;
+    }
+
+}
+.assignment-btn{
+    border-radius: 2px;
+}
+.reply-btn{
+    border-radius: 2px;
+    
+}
+
+.input-outline-control{
+    margin: 18px 0 24px 0;
+    border:1px solid #CDDDCD;
+    background-color:$white;
+    color:$secondary;
+    &:hover{
+        background-color:$secondary;
+        color:$white;
+
+    }
+}
+.input-outline-active{
+    margin: 18px 0 24px 0;
+    border:1px solid #CDDDCD;
+    background-color:$white;
+    color:$secondary;    
+}

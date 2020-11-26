@@ -1,0 +1,25 @@
+.table{
+    vertical-align:middle;
+    margin-bottom:67px;
+    tbody{
+        tr{
+            &:hover{
+                background-color: $primary;    
+        }
+    }
+        th{
+            border-bottom: 1px solid #CDDDCD!important;
+            vertical-align:middle !important;
+        }
+        td{
+            border-bottom: 1px solid #CDDDCD!important;
+            vertical-align:middle !important;
+            a{
+                color:$dark;
+                &:hover{
+                    color:$secondary;
+                }
+            }
+        }
+    }
+}

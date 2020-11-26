@@ -1,0 +1,17 @@
+
+.modalView-img{
+    width:141px;
+    height:141px;
+    object-fit: cover;
+}
+.verified-tag{
+    background-color: $primary;
+    padding:4px 8px;
+}
+.new-admin{
+    color:$dark;
+    &:hover{
+        color:$secondary;
+        text-decoration: none;
+    }
+}

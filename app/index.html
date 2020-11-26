@@ -1,0 +1,224 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+      <div class="col-9 py-3">
+          <div class="d-flex align-items-center mb-4">
+            <div class="d-flex">
+              <h1 class="mr-4 h1">Assignment</h1>
+              <div class="d-flex align-items-center">
+                <h2 class="mr-03 h2">All Courses</h2>
+                <a href="#"><i class="material-icons text-secondary">keyboard_arrow_down</i></a>    
+              </div>
+            </div>
+            <div class="ml-auto d-flex">
+              <a class="mr-2 header-icon" href="#"><i class="material-icons">search</i></a>
+              <a class="header-icon" href="#"><i class="material-icons">notifications_active</i></a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-03">
+            <h2 class="mr-03 h2">All (4)</h2>
+            <a href="#"><i class="material-icons text-secondary">keyboard_arrow_down</i>  </a>
+            <h4 class="ml-auto text-gray-lighter h3">2 comments</h4>  
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <ul class="assignment-list">
+                <li class="assignment-list-active ">
+                  <a class="d-flex align-items-center" href="#">
+                    <div>
+                      <h3 class="mb-02 h4">Chapter Assignment 2</h3>
+                      <h2 class="h2">Please check this file…</h2>
+                    </div>
+                    <div class="ml-auto text-right">
+                      <h3 class="mb-05 h4">4 hrs ago</h3>
+                      <h4 class="text-gray text-right h3">Emily Wang</h4>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex align-items-center" href="#">
+                    <div>
+                      <h3 class="mb-02 h3">Chapter Assignment 1</h3>
+                      <h2 class="h2">My Homework</h2>
+                    </div>
+                    <div class="ml-auto text-right">
+                      <h3 class="mb-05 h3">12 hrs ago</h3>
+                      <h4 class="text-gray h4">David Xu</h4>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex align-items-center" href="#">
+                    <div>
+                      <h3 class="mb-02 h4">Final Assignment</h3>
+                      <h2 class="h2">Have a problem with this…</h2>
+                    </div>
+                    <div class="ml-auto text-right">
+                      <h3 class="mb-05 h4">18 hrs ago</h3>
+                      <h4 class="text-gray h3">Tony Wei</h4>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex align-items-center" href="#">
+                    <div>
+                      <h3 class="mb-02 h4">Final Assignment</h3>
+                      <h2 class="h2">Did I do it right?</h2>
+                    </div>
+                    <div class="ml-auto text-right">
+                      <h3 class="mb-05 h4">19 hrs ago</h3>
+                      <h4 class="text-gray h3">Christina Lin</h4>
+                    </div>
+                  </a>
+                </li>
+              </ul>  
+            </div>
+            <div class="col-7">
+              <div class="comments-list">
+                <div class="card border-bottom-0">
+                    <div class="bg-primary card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="h3 mb-05">Chapter Assignment 2 / HTML&amp;CSS</h3>
+                            <p class="font-weight-bold mb-0">Please check this file for me, thanks!</p>
+                        </div>
+                        <a href="#" class="material-icons text-dark" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            more_vert
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item btn btn-danger btn-block" href="#">Delete</a>
+                        </div> 
+                    </div>
+                    <div class="card-body">
+                        <div class="media">
+                          <div class="assignment-user"></div>
+                            <div class="media-body border-bottom pb-1">
+                                <h5 class="h6 font-weight-bold mb-02">Emily Wang</h5>
+                                <span class="h4 text-gray d-block mb-1">10:38 AM (4 hours
+                                    ago)</span>
+                                    <div class="p-block">
+                                      <p class="h3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="badege badge-primary">div</span> is bigger than the height of the <span class="badege badge-primary">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                                      <button class="link-btn btn-primary text-dark d-flex align-items-center py-05 mb-1">
+                                        <i class="material-icons mr-05">attach_file</i>
+                                        <h4 class="h2">HW-2-David.zip</h4>
+                                      </button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- user -->
+                <div class="position-relative">
+                    <div class="comments-list">
+                        <div class="media border border-top-0 px-1 mb-3">
+                          <div class="assignment-self"></div>
+                            <div class="media-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                      <h5 class="h6 font-weight-bold mb-02">Andy Chen (You)</h5>
+                                      <span class="h4 text-gray d-block mb-1">13:24 AM (1 hours ago)</span>
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-2">
+                                            <a href="#" class="material-icons assignment-icon">
+                                                star_border
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="material-icons assignment-icon">
+                                                create
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="p-block">
+                                  <p class="h3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                                  <p class="h3">You can:</p>
+                                    <p class="text-indent mb-02 h3">• adjust the <span class="badege badge-primary">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="badege badge-primary">middle</span> )</p>
+                                    <p class="text-indent h3">• change the <span class="badege badge-primary">display</span> so it isn’t inline.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center">
+                            <a class="text-dark" href="#"><i class="material-icons mr-3">
+                              chevron_left
+                              </i></a>
+                            <a class="text-dark" href="#">
+                              <i class="material-icons">
+                                chevron_right
+                                </i>  
+                            </a>
+                          </div>
+                          <div class="ml-auto">
+                            <button class="btn-outline-secondary assignment-btn py-05 mr-1 px-2">Mark as read</button>
+                            <button class="btn-secondary reply-btn py-05 px-2" type="button" aria-expanded="false" aria-controls="collapseExample">Reply</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Reply -->
+                    <div class="reply-content card w-100 position-absolute">
+                        <div class="card-header">
+                            <ul class="d-flex align-items-center mb-0">
+                                <li class="mr-4">
+                                    <a href="#" class="font-weight-bold d-flex text-dark align-items-center">
+                                        Body Text
+                                        <span class="material-icons ml-05">
+                                            arrow_drop_down
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="#" class="material-icons d-flex">
+                                        format_bold
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="#" class="material-icons d-flex">
+                                        format_italic
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="#" class="material-icons d-flex">
+                                        format_list_bulleted
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="#" class="material-icons d-flex">
+                                        format_list_numbered
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="#" class="material-icons d-flex">
+                                        insert_photo
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="#" class="material-icons d-flex">
+                                        link
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="material-icons d-flex">
+                                        code
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <textarea rows="13" class="border-0 w-100" placeholder="Reply an answer…"></textarea>
+                            <div class="text-right">
+                              <button class="btn-outline-secondary assignment-btn py-05 mr-1 px-2">Cancel</button>
+                              <button class="btn-secondary reply-btn py-05 px-2" type="button">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>           
+      </div>
+

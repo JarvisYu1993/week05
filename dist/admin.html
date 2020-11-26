@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style/all.css">
+  <title>Admin</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 bg-primary py-3 ">
+        <div class="position-fixed h-100">
+            <a class="d-block mb-3 ml-3" href="./index.html"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week5/logo-ANSWER.svg" alt=""></a>
+            <ul class="nav position-sticky flex-column">
+              <li class="nav-item mb-2">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <i class="material-icons mr-1">assessment</i>
+                  <h2 class="h2">Dashboard</h2>
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link d-flex align-items-center px-3" href="#">
+                  <i class="material-icons mr-1">question_answer</i>
+                  <h2 class="h2">Question</h2>
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link d-flex align-items-center px-3 active" href="index.html">
+                  <i class="material-icons mr-1">assignment</i>
+                  <h2 class="h2">Assignment</h2>
+                </a>
+              </li>
+              <li class="nav-item mb-2"><a class="nav-link d-flex align-items-center px-3" href="#">
+                  <i class="material-icons mr-1">video_library</i>
+                  <h2 class="h2">Course</h2>
+                </a>
+              </li>
+              <li class="nav-item mb-2"><a class="nav-link d-flex align-items-center px-3" href="admin.html">
+                  <i class="material-icons mr-1">people_alt</i>
+                  <h2 class="h2">Admin</h2>
+                </a>
+              </li>
+              <li class="nav-item mb-2"><a class="nav-link d-flex align-items-center px-3" href="#">
+                  <i class="material-icons mr-1">settings</i>
+                  <h2 class="h2">Settings</h2>
+                </a>
+              </li>
+              </ul>
+            <div class="px-3 d-flex fixed-bottom">
+              <div class="user-photo mr-1"></div>
+              <div>
+                <a class="mb-03 text-dark h2" href="#">Andy Chen</a>
+                <h3 class="text-gray h3">andy0401@mail.com</h3>  
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <div class="col-9 py-3">
+          <div class="d-flex align-items-center mb-4">
+            <div class="d-flex">
+              <h1 class="mr-4 h1">Admin</h1>
+                <a class="d-flex align-items-center new-admin" href="#" data-toggle="modal" data-target="#AddModalScrollable"><span class="material-icons text-secondary mr-02">
+                    add
+                    </span>    
+                <h2 class="h2">Add New Admin</h2>
+              </a>  
+            </div>
+            <div class="ml-auto d-flex">
+              <a class="mr-2 header-icon" href="#"><i class="material-icons">search</i></a>
+              <a class="header-icon" href="#"><i class="material-icons">notifications_active</i></a>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="h2 border-top-0 border-bottom" scope="col">
+                    <div class="d-flex align-items-center">
+                        ID
+                        <a href="#">
+                            <i class="material-icons ml-02 text-secondary">
+                                arrow_downward
+                                </i>
+                        </a>
+                    </div>
+                </th>
+                <th class="h2 border-top-0 border-bottom" scope="col">Name</th>
+                <th class="h2 border-top-0 border-bottom" scope="col">Email</th>
+                <th class="h2 border-top-0 border-bottom" scope="col">Verified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="border-top" scope="row">#1</th>
+                <td class="border-top">Emir Wicks</td>
+                <td class="border-top">emir.wicks@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>Mahima.Lopez@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>Pharrell.Murray@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>Annika.Mcbride@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>Fatimah.Clark@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>Klaudia.Rhodes@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>Tillie.Lucero@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>Sabrina.Stephenson@mail.com</td>
+                <td class="border-top">
+                  <div class="d-flex align-items-center justify-content-between">
+                      Yes
+                      <div>
+                          <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                              <span class="material-icons">
+                                  remove_red_eye
+                                  </span>
+                          </a>
+                              <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                  create
+                                </i></a>    
+                      </div>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>Annie.Smith@mail.com</td>
+                <td class="border-top">
+                    <div class="d-flex align-items-center justify-content-between">
+                        Yes
+                        <div>
+                            <a class="mr-2" href="#" data-toggle="modal" data-target="#ModalView">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                    </span>
+                            </a>
+                                <a href="#"><i class="material-icons" data-toggle="modal" data-target="#modalEditScrollable">
+                                    create
+                                  </i></a>    
+                        </div>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link border-secondary d-flex align-items-center" href="#" aria-label="Previous">
+                    <span class="material-icons h2">
+                        navigate_before
+                        </span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link page-link-active border-secondary h2" href="#">1</a></li>
+              <li class="page-item"><a class="page-link border-secondary h2" href="#">2</a></li>
+              <li class="page-item"><a class="page-link border-secondary h2" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link border-secondary d-flex align-items-center" href="#" aria-label="Next">
+                    <span class="material-icons h2">
+                        navigate_next
+                        </span>
+                </a>
+              </li>
+            </ul>
+          </nav>        
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="ModalView" tabindex="-1" role="dialog" aria-labelledby="ModalViewLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body d-flex p-3">
+            <img class="modalView-img mr-2" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true" alt="">
+            <ul class="w-100">
+              <li class="d-flex justify-content-between">
+                <span class="h2 mb-05">#1</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button> 
+              </li>
+              <li>
+                <span class="h2 ">Admin</span>
+              </li>
+              <li>
+                <span class="h1 mb-05">Emir Wicks</span>
+              </li>
+              <li>
+                <p class="h3 mb-2">emir.wicks@mail.com</p>  
+              </li>
+              <li class="w-100 d-flex justify-content-between align-items-centers">
+                <span class="verified-tag h3">verified</span>
+                <a href="#">
+                  <span class="material-icons text-secondary" data-toggle="collapse" href="#collapse-btn" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    keyboard_arrow_down
+                  </span>
+                </a>
+              </li>
+              <li class="collapse multi-collapse mt-3" id="collapse-btn">
+                <div class=" d-flex justify-content-end">
+                  <button class="btn btn-outline-danger py-05 px-3 mr-1">deactivate</button>
+                  <button class="btn btn-secondary py-05 px-3">Edit</button>
+                </div>
+              </li>
+            </ul>          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEditScrollable" tabindex="-1" role="dialog" aria-labelledby="modalEditScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalEditScrollableTitle">Edit Admin</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 >Account</h5>
+          <form>
+            <div class="form-group-bottom">
+              <label class="mb-02" for="name">Name</label>
+              <input class="w-100 input-control p-1 mb-1"type="text" name="name" id="input-name" value="Emir Wicks">  
+              <label class="mb-02" for="email">Email</label>
+              <input class="w-100 input-control p-1 mb-2"type="email" name="email" id="input-email" value="emir.wicks@mail.com">  
+            </div>
+            <div class="form-group-bottom py-2">
+              <h5>Verification</h5>
+              <div class="d-flex">
+                <span class="material-icons text-secondary mr-05">check_circle</span>
+                <h3 class="h2">Verified</h3>
+                <span class="ml-auto h3">2020/4/12</span>
+              </div>  
+              <button class="w-100 btn input-outline-active text-center py-1 h2 active">Send Verification Mail</button>
+            </div>
+            <div class="form-group-bottom py-2">
+              <h5>Access Level</h5>
+              <select class="w-100 select-control p-1">
+                <option value="-Choose access level-">-Choose access level-</option>
+                <option selected>Admin</option>
+              </select>
+            </div>
+            <div class="form-check-bottom py-2">
+              <h5>Custom Access</h5>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Lecture">
+                <label class="h2 form-check-label" for="Lecture">
+                  Lecture
+                </label>  
+              </div>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Coupon">
+                <label class="h2 form-check-label" for="Coupon">
+                  Coupon
+                </label>  
+              </div>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Message">
+                <label class="h2 form-check-label" for="Message">
+                  Message
+                </label>  
+              </div>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Setting">
+                <label class="h2 form-check-label" for="Setting">
+                  Setting
+                </label>  
+              </div>
+              <div>
+                <input class="mr-05" type="checkbox" id="Task menu">
+                <label class="h2 form-check-label" for="Task menu">
+                  Task menu
+                </label>  
+              </div>
+            </div>
+            <div class="pt-2 pb-1">
+              <h5 class="">Deactivate Account</h5>
+              <div class="d-flex align-items-center mb-2">
+                <span class="material-icons text-danger mr-05">
+                  warning
+                  </span>
+              <span class="text-danger">This cannot be undone!</span>    
+              </div>
+              <button class="w-100 btn-outline-danger text-center py-1 h2 mb-4">Deactivate This Account</button>
+            </div>
+          </form> 
+        </div> 
+        <div class="modal-footer">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-secondary py-05 px-3 mr-1" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-secondary py-05 px-3">Update</button>  
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="AddModalScrollable" tabindex="-1" role="dialog" aria-labelledby="AddModalScrollableTitle" aria-hidden="true">ㄕ
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <h2 class="modal-title" id="AddModalScrollableTitle">New Admin</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 >Account</h5>
+          <form>
+            <div class="form-group-bottom">
+              <label class="mb-02" for="name">Name</label>
+              <input class="w-100 p-1 mb-1"type="text" name="name" id="input-name">  
+              <label class="mb-02" for="email">Email</label>
+              <input class="w-100 p-1 mb-2"type="email" name="email" id="input-email">  
+            </div>
+            <div class="form-group-bottom py-2">
+              <h5>Verification</h5>
+              <div class="d-flex align-items-center">
+                <span class="material-icons text-danger mr-05">
+                  warning
+                  </span>
+                <h3 class="h2">Unverified</h3>
+              </div>  
+              <button class="btn w-100 input-outline-control text-center py-1 h2">Send Verification Mail</button>
+            </div>
+            <div class="form-group-bottom py-2">
+              <h5>Access Level</h5>
+              <select class="w-100 select-control p-1">
+                <option value="-Choose access level-">-Choose access level-</option>
+                <option>Admin</option>
+              </select>
+            </div>
+            <div class="py-2">
+              <h5>Custom Access</h5>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Lecture">
+                <label class="h2 form-check-label" for="Lecture">
+                  Lecture
+                </label>  
+              </div>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Coupon">
+                <label class="h2 form-check-label" for="Coupon">
+                  Coupon
+                </label>  
+              </div>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Message">
+                <label class="h2 form-check-label" for="Message">
+                  Message
+                </label>  
+              </div>
+              <div class="mb-1">
+                <input class="mr-05" type="checkbox" id="Setting">
+                <label class="h2 form-check-label" for="Setting">
+                  Setting
+                </label>  
+              </div>
+              <div>
+                <input class="mr-05" type="checkbox" id="Task menu">
+                <label class="h2 form-check-label" for="Task menu">
+                  Task menu
+                </label>  
+              </div>
+            </div>
+          </form> 
+        </div> 
+        <div class="modal-footer">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-secondary py-05 px-3 mr-1" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-secondary py-05 px-3">Add</button>  
+          </div>  
+        </div>
+      </div>
+
+  </div>
+</body>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="assets/js/all.js"></script>
+<script src="assets/js/vendors.js"></script>
+</html>
